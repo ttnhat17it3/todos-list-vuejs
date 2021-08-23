@@ -27,6 +27,7 @@
         :todoProps="todo"
         @complete-todo="markTodo"
         @delete-todo="deleteTodo"
+        @edit-todo="editTodo"
       />
     </template>
     <template v-else-if="status === 'complete'">
@@ -36,6 +37,7 @@
         :todoProps="todo"
         @complete-todo="markTodo"
         @delete-todo="deleteTodo"
+        @edit-todo="editTodo"
       />
     </template>
     <!-- <button class="delete-btn" @click="deleteTodos">CLEAR COMPLETED</button> -->
